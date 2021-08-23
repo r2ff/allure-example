@@ -23,6 +23,7 @@ public class IssuesRestTest {
     @Microservice("Billing")
     @Tags({@Tag("api"), @Tag("smoke")})
     @ParameterizedTest(name = "Create issue via api")
+    @JiraIssues({@JiraIssue("HOM-226")})
     @ValueSource(strings = {"First Note", "Second Note"})
     public void shouldCreateUserNote(String title) {
         parameter("owner", OWNER);
