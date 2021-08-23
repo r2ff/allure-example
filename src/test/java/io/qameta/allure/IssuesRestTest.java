@@ -9,6 +9,7 @@ import static io.qameta.allure.Allure.parameter;
 
 @Layer("rest")
 @Owner("baev")
+@Lead("eroshenkoam")
 @Feature("Issues")
 public class IssuesRestTest {
 
